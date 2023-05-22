@@ -21,8 +21,8 @@ dataset$Retired = factor(dataset$Retired,
                          levels = c("No","Yes"),
                          labels = c(0,1))
 # Dividir en entrenamiento y test
-#install.packages("caTools") instalar packetes en R para cargar packete darle al check 
-#library(caTools) cargar la libreria
+#install.packages("caTools")# instalar packetes en R para cargar packete darle al check 
+#library(caTools) #cargar la libreria
 set.seed(123) # esta semilla va impactar al split
 split = sample.split(dataset$Retired,SplitRatio = 0.8)
 print(split) # pone en true las que va a usar para training y false las de true
